@@ -926,3 +926,73 @@ width:100%;
 }
 
 }
+/*=========================
+گنجینه سخن
+=========================*/
+
+.magic-book-section{
+text-align:center;
+padding:70px 20px;
+background:#fdf7ef;
+}
+
+.magic-book-section h2{
+font-size:36px;
+margin-bottom:10px;
+color:#6d4c41;
+}
+
+.book-subtitle{
+font-size:18px;
+color:#777;
+margin-bottom:25px;
+}
+
+.book-btn{
+background:#8d6e63;
+color:#fff;
+border:none;
+padding:14px 28px;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.book-btn:hover{
+background:#6d4c41;
+transform:scale(1.05);
+}
+
+.book-page{
+display:none;
+max-width:700px;
+margin:30px auto;
+padding:35px;
+background:#fffdf8;
+border:8px solid #d7b98c;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+font-size:24px;
+line-height:2;
+color:#5d4037;
+animation:fadeBook .6s;
+}
+
+.book-page.open{
+display:block;
+}
+
+@keyframes fadeBook{
+
+from{
+opacity:0;
+transform:rotateY(-90deg);
+}
+
+to{
+opacity:1;
+transform:rotateY(0deg);
+}
+
+}
