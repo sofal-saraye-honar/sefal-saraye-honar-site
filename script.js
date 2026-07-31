@@ -300,3 +300,47 @@ book.addEventListener("click", () => {
     });
 
 });
+/* ===========================
+   افکت‌های نهایی
+=========================== */
+
+// پیام خوشامدگویی پس از چند ثانیه
+setTimeout(() => {
+
+    if (!opened) {
+
+        speech.innerHTML =
+        "🌺 خوش آمدید.<br><br>داستان هر بشقاب منتظر شماست...";
+
+    }
+
+},5000);
+
+
+// درخشش تصادفی کتاب
+setInterval(() => {
+
+    book.animate([
+        {filter:"brightness(1)"},
+        {filter:"brightness(1.12)"},
+        {filter:"brightness(1)"}
+    ],{
+
+        duration:1200
+
+    });
+
+},6000);
+
+
+// حرکت نرم نقشین هنگام حرکت موس
+document.addEventListener("mousemove",(e)=>{
+
+    const x=(e.clientX/window.innerWidth)*8;
+
+    const y=(e.clientY/window.innerHeight)*8;
+
+    document.getElementById("naghashin").style.transform=
+    `translate(${x}px,${y}px)`;
+
+});
