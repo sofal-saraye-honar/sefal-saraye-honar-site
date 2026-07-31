@@ -344,3 +344,10 @@ document.addEventListener("mousemove",(e)=>{
     `translate(${x}px,${y}px)`;
 
 });
+const ganjineh = [
+...
+];
+
+function openBook() {
+...
+}
