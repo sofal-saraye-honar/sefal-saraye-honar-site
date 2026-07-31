@@ -274,3 +274,29 @@ book.addEventListener("click", function () {
     }
 
 });
+/* ===========================
+   افکت‌ها و صدا
+=========================== */
+
+// ساخت پخش‌کننده صدا
+const pageSound = new Audio("assets/page-flip.mp3");
+
+book.addEventListener("click", () => {
+
+    // پخش صدای ورق
+    pageSound.currentTime = 0;
+
+    pageSound.play().catch(() => {
+        // اگر فایل صدا هنوز وجود نداشت، خطا ندهد.
+    });
+
+    // افکت کوچک لرزش
+    book.animate([
+        { transform: "scale(1)" },
+        { transform: "scale(1.02)" },
+        { transform: "scale(1)" }
+    ], {
+        duration: 350
+    });
+
+});
