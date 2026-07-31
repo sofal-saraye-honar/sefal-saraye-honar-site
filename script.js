@@ -244,3 +244,33 @@ console.log("🌸 نقشین: امیدوارم هدیه دلخواهت را پی
 
 // پایان فایل
 console.log("🎉 Script آماده است.");
+/* ===========================
+   کتاب داستان سفال
+=========================== */
+
+const book = document.getElementById("magicBook");
+const speech = document.querySelector("#naghashin .speech");
+
+let opened = false;
+
+book.addEventListener("click", function () {
+
+    opened = !opened;
+
+    if (opened) {
+
+        book.classList.add("open");
+
+        speech.innerHTML =
+        "📖 داستان باز شد...<br><br>هر اثر سفال‌سرای هنر با عشق و هنر دست ایرانی ساخته شده است.";
+
+    } else {
+
+        book.classList.remove("open");
+
+        speech.innerHTML =
+        "سلام 🌸<br><br>روی کتاب کلیک کنید تا داستان این اثر را برایتان باز کنم...";
+
+    }
+
+});
