@@ -393,3 +393,19 @@ quoteBtn.addEventListener("click", function(){
 });
 
 }
+
+const quoteBtn = document.getElementById("quoteBtn");
+const quoteBox = document.getElementById("quoteBox");
+
+if (quoteBtn && quoteBox) {
+
+    quoteBtn.addEventListener("click", function(){
+
+        quoteBox.style.display = "block";
+
+        quoteBox.innerHTML =
+        "🏺 هر بشقاب سفالی، قصه‌ای از صبر، عشق و هنر دست هنرمند است.";
+
+    });
+
+}
