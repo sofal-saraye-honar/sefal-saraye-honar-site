@@ -377,3 +377,19 @@ document.getElementById("bookText").innerHTML = ganjineh[random];
 document.getElementById("bookPage").classList.add("open");
 
 }
+
+const quoteBtn = document.getElementById("quoteBtn");
+const quoteBox = document.getElementById("quoteBox");
+
+if(quoteBtn && quoteBox){
+
+quoteBtn.addEventListener("click", function(){
+
+    quoteBox.style.display = "block";
+
+    quoteBox.innerHTML =
+    "🏺 هر اثر دست‌ساز، قصه‌ای از عشق و صبر هنرمند است.";
+
+});
+
+}
