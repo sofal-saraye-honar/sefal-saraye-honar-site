@@ -409,3 +409,5 @@ if (quoteBtn && quoteBox) {
     });
 
 }
+
+alert("script وصل است");
